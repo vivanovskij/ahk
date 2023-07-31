@@ -22,32 +22,20 @@ SetKeyDelay, 0
 
 ;перемещение курсора
 !sc26::send {Right}		; Alt + L				перемещение курсора вправо
-!д::send {Right}
 !sc23::send {Left}			; Alt + H				перемещение курсора влево
-!р::send {Left}
 !sc25::send {Up}				; Alt + K				перемещение курсора вверх
-!л::send {Up}
 !sc24::send {Down}		; Alt + J				перемещение курсора вниз
-!о::send {Down}
 !sc18::send ^{Right}		; Alt + O				перемещение курсора в конец слова
-!щ::send ^{Right}
 !sc16::send ^{Left}			; Alt +U				перемещение курсора в начало слова
-!г::send ^{Left}
 !+sc17::send {Home}		; Alt +Shift +I		перемещение курсора в начало строки
-!+ш::send {Home}
 !sc17::send {End}			; Alt + I				перемещение курсора в конец строки
-!ш::send {End}
 
 ;удаление
 
 !sc21::send {Delete}				; Alt + R		удаление символа справа
-!а::send {Delete}
 !sc20::send {BackSpace}		; Alt + D		удаление символа слева
-!в::send {BackSpace}
 !sc12::send ^{Backspace}		; Alt + E		удаление слова слева от курсора
-!у::send ^{Backspace}
 !sc13::send ^{Delete}			; Alt + R		удаление слова справа от курсора
-!к::send ^{Delete}
 
 ;--------------------------------------------------------------------------
 ;	Кавычки, скобки
@@ -125,15 +113,6 @@ sc46::
 	else return
 }
 
-;~ :b0*:%::
-;~ {
-	;~ if (BracketMode == 1){
-		;~ send, {`%}
-		;~ send, {Left}
-		;~ return
-	;~ }
-	;~ else return
-;~ }
 
 ;--------------------------------------------------------------------------
 ;	Настройка клавиши домашней страницы и почты
